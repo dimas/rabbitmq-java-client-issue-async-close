@@ -17,6 +17,7 @@ With the RabbitMQ client 4.1.0 and NIO enabled (as the current state of source) 
 
 So despite the fact connection.close() was called and its Javadoc states 
 > Close this connection and all its channels with the AMQP.REPLY_SUCCESS close code and message 'OK'. Waits for all the close operations to complete.
+
 the connection is still visible by the broker.
 
 Commenting out "useNio()" call changes output to:
