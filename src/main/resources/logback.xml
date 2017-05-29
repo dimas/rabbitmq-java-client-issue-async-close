@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+    <jmxConfigurator/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5p [%t] %c %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.jayway.jsonpath.internal.PathCompiler" level="INFO" />
+    <logger name="com.jayway.jsonpath.internal.CompiledPath" level="INFO" />
+
+    <root level="DEBUG">
+        <appender-ref ref="console"/>
+    </root>
+</configuration>
